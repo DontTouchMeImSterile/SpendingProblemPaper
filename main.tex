@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[numbers]{natbib}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\titlelabel{\thetitle.\quad}
+
+\title{A Fully Decentralized Solution to the proposed "Spending Problem"}
+\author{Anonymous}
+\date
+
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+Ethereum DApps have become increasingly popular - mainly, ones that involve buying, selling, and trading virtual assets (hereby referred to as BSTs - Buy, Sell, Trade apps). Since 'mining' these assets like a traditional cryptocurrency is not viable for entry-level users\footnote{Mining could theoretically be made usable by entry-level users by implementing an algorithm such as Equihash, attempting to restrict mining to GPUs, and all mining being controlled by a one-click miner application. However, this is very difficult to implement on the Ethereum network, and distances assets from ETH - a close parity between BSTs and ETH is a large factor of the BST's success, since BST assets are often viewed as investments and a store of value.}, these assets are usually created by purchasing them with ETH (Ethereum). This paper attempts to answer the question "What is the ideal decentralized way to store and use this ETH?"
+\end{abstract}
+
+\section{Introduction}
+The advent of BSTs (namely Cryptokitties) has brought a new genre of game to light - a game that becomes so popular it slows down the Ethereum network, with some of its virtual items selling for over \$100,000 USD worth of ETH[1]. Etheremon soon followed, its contract gaining over \$1,000,000 worth of ETH under 24 hours[2], new investors gaining large ROIs through a pyramid model (discussed about later in the paper).
+\\
+
+It becomes clear that the sharply-rising popularity of BSTs is not simply an investment opportunity for gamers and Ethereum enthusiasts, but an investment oppurtunity for BST creators. It is extremely profitable, for both early investors and developers, to abandon decentralization and trustlessness - key aspects of blockchain technology.
+\\
+
+Though the operation of Cryptokitties is decentralized, the financial aspect is heavily skewed in the favor of its creators. 'Generation 0' cats are created by spending ethereum, which is deposited to account(s) controlled by the Cryptokitties developers, and there is an additional 3.75\% fee on every transaction[3].
+\\
+
+Etheremon does away with some of this. The assets (Etheremon) are created by spending Ethereum, which is sent to the contract's address. However, this introduces a new problem (now referred to as the Spending Problem): "What is the ideal way to use the funds in the account?"
+\\
+
+Etheremon attempts solves this by implementing a pyramid-scheme style of payment. For example, for buying an asset for 0.2 ETH, the user gains a spot on the pyramid, be it high or low. When a new user buys an Etheremon, the user before him gains 0.002 ETH. This creates a ROI dependent on how early a user bought the asset - the owner of asset \#1 would gain much more than the owner of asset \#200.[4]
+\\
+
+Although Etheremon was transparent about its pyramid-style mechanism (of course, never using the word 'pyramid'), developer incompetence led to the game being accused of being a Ponzi scheme[5] - as the smart contract contained a function that allowed the admin to withdraw all funds from the account. At the time of writing, the 'exit scam' has not yet occured - though the contract is scheduled to be updated on 1/1/2018 to remove centralization-enabling functions[6]. 
+\\
+
+In the opinion of the author, a 'decentralized pyramid scheme' is not the ideal solution to the Spending Problem - neither is transferring all the funds to the developers. The next section of this paper gives a solution to this problem.
+\\
+
+\section{Solution to the Spending Problem}
+I haven't come up with one yet. 
+\newpage
+\section{Authors}
+\subsection{Anonymous (DontTouchMeImSterile on Github)}
+\section{Github}
+If you have any improvements for the paper, you can edit it here: (it's impossible to determine what the github link is going to be)
+\\
+I will update the PDF file accordingly.
+
+\section{References}
+
+[1]\url{https://etherscan.io/tx/0xf365be10a326b894cc13ddd3edf55a2db6ec517e1af83741df61fb9b09b37118}
+
+[2]\url{https://etherscan.io/address/0x8a60806f05876f4d6db00c877b0558dbcad30682}
+
+[3]\url{https://www.cryptokitties.co/faq#How-are-you-making-money-with-CryptoKitties}
+
+[4]\url{https://medium.com/@myetheremon/etheremon-decentralized-world-of-ether-monsters-a4f355971ea2}
+
+[5]\url{https://www.reddit.com/r/ethereum/comments/7kz83v/etheremon_a_pokemon_version_of_cryptokitties_just/drijss9/}
+
+[6]\url{https://medium.com/@myetheremon/thoughts-and-important-announcements-25e059
+
+
+}
+\end{document}
